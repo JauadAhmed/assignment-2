@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+}
+
+.inter{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.miama{
+    font-family: 'Miama', sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+}
+
+p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.3px;  
+}
+
+
+
+
+
+body{
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    max-width: 73%;
+    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
+}
+nav{
+    display: flex;
+    justify-items: center;
+
+}
+
+.menu{
+    display: flex;
+    text-align: center;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ------------------------------ banner----------------*/
+
+.banner{
+    display: flex;
+    align-items: center;
+}
+
+
+.banner-content h1{
+    font-size: 78px;
+    font-weight: 900;
+
+}
+
+.banner-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn{
+    width: 23%;
+    padding: 16px 40px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 42px;
+    background: #E6533C;
+    cursor: pointer;
+}
+
+.without-color{
+    border: 1.5px solid white;
+    background: none;
+}
+
+.banner-img{
+    width: 349px;
+    height: 588px;
+}
+
+
+/* ------------------------- habit ---------------------*/
+
+.change{
+    /* max-width: 73%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.sec-head{
+    width: 44%;
+    text-align: center;
+}
+
+.sec-head h1{ 
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.change-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.change-card-con{
+    width: 231px;
+    height: 274px;
+
+}
+
+.change-card-con-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.change-card-con-img img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.10);
+}
