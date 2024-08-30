@@ -207,3 +207,67 @@ a{
     height: 30%;
     border-radius: 18px;
 }
+
+
+/* -------------------------------- bmi----------- */
+
+.bmi{
+    width: 44%;
+    text-align: start;
+    
+}
+
+.calculator{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #222;
+}
+.cal-tab{
+    width: 14%;
+}
+
+.cal-form{
+    width: 36%;
+}
+
+.form-container {
+    width: 100%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+input[type="text"], select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select {
+    grid-column: span 1;
+}
+
+select:last-of-type {
+    grid-column: span 2;
+}
+
+button {
+    grid-column: span 1;
+    padding: 10px;
+    border-radius: 42px;
+    background: #E6533C;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
