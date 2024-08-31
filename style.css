@@ -26,7 +26,7 @@
 p{
     color: rgba(255, 255, 255, 0.50);
     font-size: 16px;
-    line-height: 18px;
+    line-height: 25px;
     letter-spacing: 0.3px;  
 }
 
@@ -48,16 +48,32 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 40px;
 }
 
 header{
-    max-width: 73%;
-    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
-}
-nav{
+    width: 100%;
     display: flex;
-    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
 
+    padding: 35px 15px;
+}
+
+
+nav{
+    width: 73%;
+    display: flex;
+    align-items: center;
+
+}
+
+.title{
+    color: #E6533C;
+    font-style: italic;
+    font-weight: 800;
 }
 
 .menu{
@@ -72,21 +88,33 @@ a{
     cursor: pointer;
 }
 
+#hamburger{
+    display: none;
+    width: 24px;
+    height: 24px;
+    
+}
+
 
 /* ------------------------------ banner----------------*/
 
 .banner{
+    width: 73%;
     display: flex;
     align-items: center;
 }
 
-
+.banner-content{
+    width: 50%;
+}
 .banner-content h1{
     font-size: 78px;
     font-weight: 900;
-
+    line-height: 89%;
 }
-
+.banner-content p{
+    padding: 20px 0px;
+}
 .banner-btn{
     display: flex;
     align-items: center;
@@ -94,7 +122,7 @@ a{
 }
 
 .btn{
-    width: 23%;
+    width: 41%;
     padding: 16px 40px;
 
     font-size: 18px;
@@ -112,8 +140,9 @@ a{
 }
 
 .banner-img{
+    margin: 0px auto;
     width: 349px;
-    height: 588px;
+    /* height: 588px; */
 }
 
 
@@ -220,12 +249,23 @@ a{
 .calculator{
 
     display: flex;
-    align-items: center;
+    /* height: 425px; */
+    align-items: stretch;
     justify-content: space-evenly;
     background: #222;
+    padding: 35px 20px;
 }
+table{
+    margin-top: 30px;
+    width: 285px;
+    height: 216px;
+}
+
 .cal-tab{
-    width: 14%;
+    width: 25%;
+}
+.form-title p{
+    padding: 20px 0px;
 }
 
 .cal-form{
@@ -234,6 +274,7 @@ a{
 
 .form-container {
     width: 100%;
+    margin-top: 15px;
 }
 
 form {
@@ -243,9 +284,9 @@ form {
 }
 
 input[type="text"], select {
-    padding: 10px;
+    padding: 12px 40px 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #333;
     color: #fff;
     width: 100%;
@@ -262,7 +303,8 @@ select:last-of-type {
 
 button {
     grid-column: span 1;
-    padding: 10px;
+    padding: 16px 40px;
+    margin-top: 20px;
     border-radius: 42px;
     background: #E6533C;
     border: none;
@@ -270,4 +312,279 @@ button {
     font-weight: 600;
     cursor: pointer;
 
+}
+
+
+/* ------------------------ team scetion------------- */
+
+
+.team-section {
+    width: 73%;
+    text-align: center;
+    padding: 20px;
+}
+
+.team-section h1 {
+    margin-bottom: 10px;
+}
+
+.team-section p {
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.10);
+    padding: 20px;
+}
+
+.team-member {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+
+.team-member img {
+    width: 100%;
+    height: 272px;
+    display: block;
+    border-radius: 10px;
+}
+
+.team-member-info {
+    text-align: start;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+   
+}
+
+.team-member-info h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.team-member-info p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #ccc; /* Lighter text color for the role */
+}
+
+
+
+
+
+
+/* -------------------------------- footer -------------- */
+
+.footer {
+    background: rgba(255, 255, 255, 0.10);
+    color: #ccc; 
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 73%;
+    margin: 0 auto;
+    gap: 120px;
+}
+
+.footer-about {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-logo {
+    color: #E6533C; 
+    font-size: 70px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.footer-about p {
+    max-width: 300px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+    min-width: 250px;
+}
+
+.footer-column h3 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: rgba(255, 255, 255, 0.50);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #ff4500; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444; 
+    color: #666; 
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    
+
+    nav{
+        width: 100%;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    #hamburger{
+        display: flex;
+    }
+    .banner{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .banner-content{
+        width: 100%;
+    }
+
+    .banner-content h1{
+        font-size: 36px;
+        line-height: 170%;
+    }
+
+    .btn{
+        width: 100%;
+        padding: 16px 11px;
+        font-size: 16px;
+    }
+
+    .banner-img{
+        margin: 0px auto;
+        width: 305px;
+        /* height: 588px; */
+    }
+
+    .sec-head{
+        width: 90%;
+    }
+    .sec-head h1{
+        font-size: 32px;
+    }
+    
+    
+    .change-card{
+        flex-direction: column;
+    }
+
+    .extra-mile{
+        width: 89%;
+        flex-direction: column;
+        padding: 29px;
+        gap: 31px;
+    }
+
+    .extra-mile-con{
+        width: 100%;
+    }
+
+    .extra-mile-con h1{
+        font-size: 32px;
+    }
+
+    .extra-mile-con p{
+        font-size: 14px;
+    }
+    .extra{
+        width: 100%;
+    }
+
+
+    .extra-mile img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .bmi{
+        width: 89%;
+    }
+
+    .calculator{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cal-tab{
+        width: 89%;
+    }
+    .cal-form{
+        width: 89%;
+    }
+
+    .team-section{
+        width: 100%;
+    }
+
+    .team-container {
+        grid-template-columns: 1fr;/* 3 columns on larger devices */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+    .footer-container{
+        margin: 0px;
+    }
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about,
+    .footer-links {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo{
+        font-size: ;
+    }
 }
