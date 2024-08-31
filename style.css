@@ -74,6 +74,17 @@ nav{
     color: #E6533C;
     font-style: italic;
     font-weight: 800;
+    cursor: pointer;
+}
+
+.home{
+    display: flex;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 46px;
+    background: #E6533C;
 }
 
 .menu{
@@ -142,14 +153,74 @@ a{
 .banner-img{
     margin: 0px auto;
     width: 349px;
-    /* height: 588px; */
+    
 }
 
+
+
+.overlay-section {
+    position: relative;
+    
+    width: 305px;
+    margin: 20px auto;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.overlay-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.overlay-box {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: start;
+    max-width: 150px;
+}
+
+.top-right {
+    align-self: flex-end;
+}
+
+.bottom-left {
+    display: flex;
+    align-items: center;
+}
+
+
+.large-text {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+}
+
+.small-text {
+    font-size: 14px;
+}
 
 /* ------------------------- habit ---------------------*/
 
 .change{
-    /* max-width: 73%; */
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,7 +247,7 @@ a{
 
 .change-card-con{
     width: 231px;
-    height: 274px;
+
 
 }
 
@@ -238,6 +309,76 @@ a{
 }
 
 
+/* ----------------service------ */
+
+
+.services-section {
+    width: 73%;
+    text-align: center;
+   
+}
+
+.services-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.services-section p {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.weight-room {
+    background-image: url('images/weight-room.png'); /
+}
+
+.womens-gym {
+    background-image: url('images/womens-gym.png'); 
+}
+
+
+.group-classes {
+    background-image: url('images/les-mills-classes.png'); 
+}
+
+.turf-area {
+    background-image: url('images/turf-area.png'); 
+}
+
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #bbb;
+}
+
+
 /* -------------------------------- bmi----------- */
 
 .bmi{
@@ -249,18 +390,21 @@ a{
 .calculator{
 
     display: flex;
-    /* height: 425px; */
+
     align-items: stretch;
     justify-content: space-evenly;
     background: #222;
     padding: 35px 20px;
 }
 table{
+    border: rgba(255, 255, 255, 0.10);
     margin-top: 30px;
     width: 285px;
     height: 216px;
 }
-
+tbody td{
+    color: rgba(255, 255, 255, 0.50);
+}
 .cal-tab{
     width: 25%;
 }
@@ -375,7 +519,7 @@ button {
 .team-member-info p {
     margin: 0;
     font-size: 0.9em;
-    color: #ccc; /* Lighter text color for the role */
+    color: #ccc; 
 }
 
 
@@ -499,7 +643,7 @@ button {
     .banner-img{
         margin: 0px auto;
         width: 305px;
-        /* height: 588px; */
+       
     }
 
     .sec-head{
@@ -541,6 +685,12 @@ button {
         width: 100%;
         height: 100%;
     }
+    .services-section{
+        width: 89%;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
 
     .bmi{
         width: 89%;
@@ -563,7 +713,7 @@ button {
     }
 
     .team-container {
-        grid-template-columns: 1fr;/* 3 columns on larger devices */
+        grid-template-columns: 1fr;
     }
 
     .footer-container {
